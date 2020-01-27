@@ -17,16 +17,6 @@ $("h1").click(function() {
 
 });
 
-$("document").keydown(function() {
-  if (!started) {
-
-    $("#level-title").text("Level " + level);
-    level--;
-    nextSequence();
-    started = true;
-  }
-
-});
 
 
 // Sequencing Code
