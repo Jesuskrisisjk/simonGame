@@ -6,7 +6,7 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 
 // Any key to start code
 
-$("h1").tap(function() {
+$("h1").click(function() {
   if (!started) {
 
     $("#level-title").text("Level " + level);
@@ -16,6 +16,18 @@ $("h1").tap(function() {
   }
 
 });
+
+$("document").keydown(function() {
+  if (!started) {
+
+    $("#level-title").text("Level " + level);
+    level--;
+    nextSequence();
+    started = true;
+  }
+
+});
+
 
 // Sequencing Code
 
