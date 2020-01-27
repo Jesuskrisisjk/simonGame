@@ -6,7 +6,7 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 
 // Any key to start code
 
-$(document).keydown(function() {
+$("h1").click(function() {
   if (!started) {
 
     $("#level-title").text("Level " + level);
